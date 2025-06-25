@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>噗哩搶票練習ㆁᴗㆁ✿︎</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="哈民的頭.png" type="image/png">
+</head>
+<body>
+
+  <div class="header">拓元搶票練習網頁</div>
+
+  <div class="navbar">
+    <div>
+      <span>節目資訊</span>
+      <span style="margin-left: 24px;">MORE</span>
+    </div>
+    <div>會員登入</div>
+  </div>
+
+  <div class="breadcrumb">&nbsp;首頁 / 節目資訊 / 2025 PLAVE Asia Tour [DASH: Quantum Leap]</div>
+
+  <div class="image-box">&lt;目前版本&gt;<br>2025 PLAVE Asia Tour [DASH: Quantum Leap] in Taipei <br> 
+  售票時間：2025/06/28 (六) 12PM (Local Time)</div>
+
+  <div class="countdown">
+    <p style="font-weight:bold;">按下 “start” 後，將正向倒數 6 秒</p>
+    <p>中原標準時間 - 現在台灣・台北時間（又稱國家標準時間）</p>
+    <div id="clock" class="timer">11：59：55</div>
+    <button class="start-btn" onclick="startCountdown()">START</button>
+  </div>
+
+  <div class="button-group">
+    <button class="primary">立即購票</button>
+    <button>購票流程</button>
+    <button>取票流程</button>
+    <button>退票申請表單</button>
+  </div>
+
+  <div id="ticket-info" class="ticket-info">
+    <div class="ticket-controls">
+      <select>
+        <option selected disabled>請選擇日期</option>
+        <option value="2025-08-23">2025/08/23 (六) 18:00</option>
+      </select>
+      <input type="text" placeholder="輸入關鍵字">
+    </div>
+    <table class="ticket-table">
+      <thead>
+        <tr>
+          <th>演出時間</th>
+          <th>場次名稱</th>
+          <th>場地</th>
+          <th>購買狀態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025/08/23 (六)<br>18:00</td>
+          <td>2025 PLAVE Asia Tour<br>[DASH: Quantum Leap] in Taipei</td>
+          <td>林口體育館</td>
+          <td id="purchase-status">請先按 START</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warning-box">
+    <p>欲購票者，需先成功加入會員及手機號碼驗證，驗證成功後才可開始購票，請提早完成手機驗證，以免影響購票。（手機號僅限首次加入會員者需要驗證。）</p>
+    <p class="en">Please note, if you are a new fan you will only be able to start purchasing tickets after successfully verifying your mobile phone number. We suggest that you verify your mobile number in advance to speed up your ticket purchases.</p>
+  </div>
+
+  <div class="footer-nav">
+    <div class="footer-tabs">
+      <span>節目介紹</span>
+      <span>注意事項</span>
+      <span>購票提醒</span>
+      <span>取票提醒</span>
+      <span>退票說明</span>
+    </div>
+    <div class="footer-note">
+      <p>本網站僅供搶票需求練習使用，並無販售票券及蒐取個人資料</p>
+      <h3>正式搶票請至相關售票系統、網站</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
