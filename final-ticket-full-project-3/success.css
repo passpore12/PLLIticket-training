@@ -1,0 +1,153 @@
+ body {
+  margin: 0;
+  font-family: "微軟正黑體", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* 黑色標題列 */
+.header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 藍色導覽列 */
+.navbar {
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 32px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 麵包屑導覽列 */
+.breadcrumb {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+
+.program-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;       /* ← 這是關鍵 */
+  gap: 32px;
+  max-width: 960px;
+  margin: 10px  auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.program-info {
+  min-width: 320px;
+}
+
+.program-wrapper img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+.dropdown {
+  width: 560px;
+  height: 10px;
+  margin-top: 4px;
+  font-size: 12px;
+  background-color: #EBEDEF;
+	 border: 1px solid #B2BABB;
+	 padding: 8px 10px;
+	border-radius: 8px;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 960px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.step.completed .circle {
+  background-color: #4CAF50;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #ccc;
+  margin: 0 8px;
+}
+
+.label {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+
+.success-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.poster {
+  width: 480px;
+  max-width: 90%;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: #f26522;
+  font-weight: 700;
+}
+
+.spray {
+  color: #d94e28;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #0074e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb8;
+}

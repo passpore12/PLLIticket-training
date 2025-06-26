@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>搶票成功</title>
+  <link rel="stylesheet" href="success.css" />
+</head>
+<body>
+	<div class="header">拓元搶票練習網頁</div>
+<div class="navbar">
+<div>
+<span>節目資訊</span>
+<span style="margin-left: 24px;">MORE</span>
+</div>
+<div>會員登入</div>
+</div>
+<div class="progress-tracker">
+<div class="step completed">
+<div class="circle">✓</div>
+<div class="label">選擇區域</div>
+</div>
+<div class="line"></div>
+<div class="step completed">
+<div class="circle">✓</div>
+<div class="label">選擇張數</div>
+</div>
+<div class="line"></div>
+<div class="step completed">
+<div class="circle">✓</div>
+<div class="label">購票確認</div>
+</div>
+<div class="line"></div>
+<div class="step">
+<div class="circle"></div>
+<div class="label">付款</div>
+</div>
+<div class="line"></div>
+<div class="step">
+<div class="circle"></div>
+<div class="label">完成訂購</div>
+</div>
+</div>
+	
+	
+	
+	
+  <div class="success-container">
+    <img src="25_plave_.jpg" alt="成功圖片" class="poster" />
+    <h1><span class="highlight">＼恭喜本PLLI!!搶票成功／</span></h1>
+    <p class="spray">來點有票噴霧 (∩^o^)⊃━☆ﾟ.*･｡</p>
+    <p id="flow-timer">搶票總花費時間：00:00 秒</p>
+    <button onclick="location.href='index.html'">再試一次</button>
+	  
+	 
+
+<script>
+  const flowStartTime = localStorage.getItem("flowStartTime");
+  if (flowStartTime) {
+    const now = Date.now();
+    const diffMs = now - parseInt(flowStartTime); // 毫秒差距
+    const sec = String(Math.floor(diffMs / 1000)).padStart(2, '0');
+    const ms = String(Math.floor((diffMs % 1000) / 10)).padStart(2, '0'); // 取 2 位數毫秒
+    document.getElementById("flow-timer").textContent = `搶票總花費時間：${sec}:${ms}`;
+    localStorage.removeItem("flowStartTime");
+  }
+</script>
+	  
+	  
+  </div>
+</body>
+</html>

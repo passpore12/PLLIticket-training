@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>選擇張數</title>
+  <link rel="stylesheet" href="select-quantity.css">
+</head>
+<body>
+	<div class="header">拓元搶票練習網頁</div>
+<div class="navbar">
+<div>
+<span>節目資訊</span>
+<span style="margin-left: 24px;">MORE</span>
+</div>
+<div>會員登入</div>
+</div>
+<div class="progress-tracker">
+<div class="step completed">
+<div class="circle">✓</div>
+<div class="label">選擇區域</div>
+</div>
+<div class="line"></div>
+<div class="step completed">
+<div class="circle">✓</div>
+<div class="label">選擇張數</div>
+</div>
+<div class="line"></div>
+<div class="step">
+<div class="circle"></div>
+<div class="label">購票確認</div>
+</div>
+<div class="line"></div>
+<div class="step">
+<div class="circle"></div>
+<div class="label">付款</div>
+</div>
+<div class="line"></div>
+<div class="step">
+<div class="circle"></div>
+<div class="label">完成訂購</div>
+</div>
+</div>
+<div class="program-wrapper">
+<img src="25_plave_.jpg"/>
+<div class="program-info">
+      2025 PLAVE Asia Tour [DASH: Quantum Leap] in Taipei
+      <div class="dropdown">
+        2025/08/23 (六) 18:00 
+         &lt;林口體育館&gt; 2025 PLAVE Asia Tour [DASH: Quantum Leap] in Taipei    ∨
+      </div>
+</div>
+</div>
+  <div class="container">
+    <div class="zone-header">
+      所選區域
+      <div class="zone-box"><span class="color-box" id="zone-color"></span>
+		  <span id="selected-zone">（載入中...）</span></div>
+      ｜最多可選兩張
+    </div>
+
+    <table class="ticket-table">
+      <thead>
+        <tr>
+          <th>票種/票價 (元)</th>
+          <th>數量選擇</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ticket-type" id="ticket-name">（載入中）</td>
+          <td>
+            <select id="quantity">
+              <option value="0">0</option>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+            </select>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+	  
+	  
+	  
+	  
+   <div class="captcha-section">
+  <canvas id="captcha-canvas" width="160" height="60" style="cursor:pointer;"></canvas>
+  <div class="captcha-input-wrapper">
+    <input type="text" id="captcha-input" placeholder="請輸入驗證碼">
+    <div class="captcha-note">
+      ＊驗證碼請用英文輸入，可點圖片更換驗證碼<br>
+      ＊請勿多視窗操作，避免購票失敗
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="agree">
+      <label><input type="checkbox" id="agree"> 我已詳閱且同意.....................</label>
+    </div>
+
+    <div class="btn-row">
+      <button onclick="goBack()">重新選擇</button>
+      <button class="confirm" onclick="submit()">確認張數</button>
+    </div>
+  </div>
+
+  <script src="select-quantity.js"></script>
+</body>
+</html>
