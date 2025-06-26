@@ -17,10 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const timeText = timerDisplay.innerText;
         const [hour, minute, second] = timeText.split("：").map(Number);
 
-        const isAfter120001 =
-          hour > 12 || (hour === 12 && (minute > 0 || second > 0));
+        const isAfter120000 =
+  (hour === 12 && minute === 0 && second >= 0) ||
+  (hour === 12 && minute > 0) ||
+  hour > 12;
 
-        if (isAfter120001) {
+        if (isAfter120000) {
           purchaseStatus.innerHTML = '<button class="buy-btn" onclick="goToPurchase()">立即購買</button>';
         } else {
           purchaseStatus.innerText = "即將開賣";
@@ -45,7 +47,7 @@ function startCountdown() {
   }
 
   updateDisplay();
-  let steps = 6;
+  let steps = 5;
 
   const interval = setInterval(() => {
     currentSecond++;

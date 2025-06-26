@@ -78,6 +78,23 @@
 .question-area p {
   margin: 12px 0;
 }
+
+.question-block {
+  margin-bottom: 24px; /* 控制題目之間的距離，可依需求調整數值 */
+  padding-bottom: 12px;
+  border-bottom:  px dashed #ccc; /* 可選：加分隔線讓視覺更清楚 */
+}
+
+#single-question p {
+  margin-bottom: 16px; /* ✅ 題目與說明文字之間的距離 */
+}
+
+#answer-instruction {
+  margin-top: 60px; /* ✅ 說明文字與上方的距離 */
+  line-height: 1.6;
+}
+
+
 .tip {
   color: #0066cc;
   font-weight: bold;
