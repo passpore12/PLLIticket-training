@@ -90,7 +90,13 @@
   目前已瀏覽：<span id="visitor-count">載入中...</span> 人
 </footer>
 	
-	<script type="module" src="firebase-counter.js"></script>
+	<!-- Firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+<!-- Firebase 設定與計數邏輯 -->
+<script src="firebase.js"></script>
+<script src="visitor-counter.js"></script>
 	
   <script src="script.js"></script>
 </body>
